@@ -4,43 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Escondida - Melipilla</title>
-  <meta name="description" content="Comida casera, reservas online y porciones abundantes en restaurante La Escondida (Melipilla, Chiñihue Las Rosas)">
+  <meta name="description" content="Comida casera, ambiente familiar y reservas online en restaurante La Escondida (Melipilla)">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="container">
+  <div class="bg-gradient"></div>
+  <div class="decor decor-top">
+    <img src="img/decor-blob.svg" alt="" draggable="false">
+  </div>
+  <main class="container fade-in">
     <header>
-      <h1>🍲 La Escondida</h1>
-      <h2>Comida casera que llena el corazón</h2>
-      <p class="sub">Porciones abundantes, ambiente familiar y los mejores sabores de la zona rural de Melipilla.</p>
+      <h1><span>🍲</span> La Escondida</h1>
+      <h2>Comida casera, moderna y abundante</h2>
+      <p class="sub">Ambiente familiar y los mejores sabores de la zona rural de Melipilla.</p>
     </header>
-    <section class="platos">
-      <h3>Nuestros imperdibles:</h3>
-      <ul>
-        <li>Carne mechada</li>
-        <li>Pollo asado</li>
-        <li>Guatitas</li>
-        <li>Pastel de choclo</li>
-        <li>Pebre casero y pan amasado</li>
-      </ul>
+    <section class="hero-img">
+      <img src="img/plato-destacado.webp" alt="Plato destacado" class="img-animada">
     </section>
-    <div class="botones">
-      <a class="btn" href="#reserva">Reservar ahora</a>
+    <section class="platos fade-up">
+      <h3>Nuestros imperdibles</h3>
+      <div class="platos-cards">
+        <div class="card"><span>🍖</span> Carne mechada</div>
+        <div class="card"><span>🍗</span> Pollo asado</div>
+        <div class="card"><span>🐮</span> Guatitas</div>
+        <div class="card"><span>🌽</span> Pastel de choclo</div>
+        <div class="card"><span>🍞</span> Pan amasado</div>
+      </div>
+    </section>
+    <section class="cta fade-up">
+      <a class="btn" href="#reserva">Reservar mesa</a>
       <a class="btn-outline" href="https://maps.app.goo.gl/CHiNihueLasRosas" target="_blank">Cómo llegar</a>
-    </div>
-    <section class="alerta">
-      <strong>¡Alta demanda!</strong> Te recomendamos reservar con anticipación. <br>
+    </section>
+    <section class="alerta fade-up">
+      <strong>¡Alta demanda!</strong> Te recomendamos reservar con anticipación.<br>
       Abierto de martes a domingo, 12:00 a 22:00 hrs.
     </section>
-    <section class="img-wrap">
-      <img src="img/plato-destacado.webp" alt="Plato típico La Escondida">
-    </section>
     <footer>
+      <div class="decor decor-bottom">
+        <img src="img/decor-wave.svg" alt="" draggable="false">
+      </div>
       <p>📍 Chiñihue Las Rosas, Melipilla – <a href="mailto:reservas@laescondida.cl">reservas@laescondida.cl</a></p>
-      <p class="mini">Sitio web solo informativo. Para reservas online reales, consulta la próxima versión.</p>
+      <p class="mini">Sitio web informativo. Las reservas online llegarán en la próxima versión.</p>
     </footer>
   </main>
+  <script>
+    // Animación de aparición
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.fade-in, .fade-up').forEach(el => el.classList.add('visible'));
+    });
+  </script>
 </body>
 </html>

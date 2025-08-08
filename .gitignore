@@ -1,16 +1,7 @@
-# Node & build
-node_modules/
-dist/
-.cache/
-tmp/
-*.log
-
-# Env vars
-.env
-.env.*
-
-# OS/editor
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
+node_modules/
+.env
+.env.*
