@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Restaurante La Escondida — Comida casera y grandes porciones en Melipilla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Restaurante La Escondida en Chiñihue Las Rosas, Melipilla. Especialidad en comida casera: carne mechada, pollo asado, guatitas y más. ¡Porciones abundantes! Reserva online.">
+  <meta name="theme-color" content="#7C3AED">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+  <meta property="og:title" content="Restaurante La Escondida — Melipilla">
+  <meta property="og:description" content="Comida casera y porciones abundantes. Reserva online.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <div class="logo">La Escondida</div>
+        <p class="tagline">Comida casera, porciones que llenan el corazón.</p>
+        <ul class="highlights">
+          <li>Carne mechada</li>
+          <li>Pollo asado</li>
+          <li>Guatitas</li>
+          <li>Y mucho más…</li>
+        </ul>
+        <div class="cta-row">
+          <a href="#reservas" class="btn primary">Reservar ahora</a>
+          <a href="https://maps.app.goo.gl/R77LW5YKCLjWikAA9" target="_blank" rel="noopener" class="btn ghost">Cómo llegar</a>
+        </div>
+        <div class="busy-note">
+          Últimamente estamos con alta demanda. Te recomendamos reservar con anticipación.
+        </div>
+      </div>
+      <div class="hero">
+        <div class="hero-card">
+          <img alt="Plato casero abundante" src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=1200&auto=format&fit=crop">
+          <div class="hero-badge">Porciones grandes</div>
+        </div>
+      </div>
+    </div>
+    <div class="shape-divider" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="features container">
+      <h2>Sabores de casa, en Chiñihue Las Rosas</h2>
+      <p class="lead">Estamos en Melipilla, específicamente en Chiñihue Las Rosas. Ven por nuestras preparaciones tradicionales y porciones generosas.</p>
+      <div class="grid-3">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Carne mechada">
+          <h3>Carne mechada</h3>
+          <p>Jugosa, casera y con el sazón de siempre.</p>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1604908554007-29f9a38d5d2a?q=80&w=800&auto=format&fit=crop" alt="Pollo asado">
+          <h3>Pollo asado</h3>
+          <p>Dorado por fuera, tierno por dentro. Ideal para compartir.</p>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=800&auto=format&fit=crop" alt="Guatitas">
+          <h3>Guatitas</h3>
+          <p>Tradicionales y sabrosas, un clásico que encanta.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="reservas" class="reservation">
+      <div class="container">
+        <div class="res-grid">
+          <div class="res-info">
+            <h2>Reserva tu mesa</h2>
+            <p class="lead">Asegura tu lugar con nuestra reserva online. Te contactaremos para confirmar.</p>
+            <ul class="bullets">
+              <li>Horario sugerido: 12:00 a 22:00</li>
+              <li>Recomendada para grupos y fines de semana</li>
+              <li>Si no encuentras hora, envíanos tus comentarios</li>
+            </ul>
+            <div class="map-card">
+              <iframe
+                title="Mapa de Restaurante La Escondida"
+                src="https://www.google.com/maps?q=Chi%C3%B1ihue%20Las%20Rosas%2C%20Melipilla&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <a class="map-link" target="_blank" rel="noopener" href="https://maps.app.goo.gl/R77LW5YKCLjWikAA9">Ver en Google Maps</a>
+            </div>
+          </div>
+          <div class="res-form">
+            <form id="reserveForm" novalidate>
+              <div class="field">
+                <label for="name">Nombre y apellido</label>
+                <input id="name" name="name" type="text" required placeholder="Ej: Juanita Pérez" autocomplete="name" />
+                <small class="error" data-error-for="name"></small>
+              </div>
+              <div class="field">
+                <label for="phone">Teléfono</label>
+                <input id="phone" name="phone" type="tel" required placeholder="+56 9 1234 5678" autocomplete="tel" />
+                <small class="error" data-error-for="phone"></small>
+              </div>
+              <div class="field">
+                <label for="email">Email (opcional)</label>
+                <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" />
+                <small class="error" data-error-for="email"></small>
+              </div>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="people">Personas</label>
+                  <input id="people" name="people" type="number" min="1" max="20" value="2" required />
+                  <small class="error" data-error-for="people"></small>
+                </div>
+                <div class="field">
+                  <label for="date">Fecha</label>
+                  <input id="date" name="date" type="date" required />
+                  <small class="error" data-error-for="date"></small>
+                </div>
+                <div class="field">
+                  <label for="time">Hora</label>
+                  <input id="time" name="time" type="time" step="1800" required />
+                  <small class="error" data-error-for="time"></small>
+                </div>
+              </div>
+              <div class="field">
+                <label for="notes">Comentarios (opcional)</label>
+                <textarea id="notes" name="notes" rows="3" placeholder="Ej: Silla para niño, alergias, cumpleaños, etc."></textarea>
+              </div>
+
+              <button id="submitBtn" type="submit" class="btn primary full">Enviar reserva</button>
+              <p class="form-footnote">Al enviar, aceptas ser contactado para confirmar tu reserva.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery container">
+      <h2>Ambiente familiar</h2>
+      <div class="marquee">
+        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=1000&auto=format&fit=crop" alt="Ambiente 1">
+        <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?q=80&w=1000&auto=format&fit=crop" alt="Ambiente 2">
+        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=1000&auto=format&fit=crop" alt="Ambiente 3">
+        <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?q=80&w=1000&auto=format&fit=crop" alt="Ambiente 4">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div>
+        <div class="logo small">La Escondida</div>
+        <p>Chiñihue Las Rosas, Melipilla</p>
+        <p><a href="https://maps.app.goo.gl/R77LW5YKCLjWikAA9" target="_blank" rel="noopener">Ver en Google Maps</a></p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>Email: <a href="mailto:reservas@tudominio.cl">reservas@tudominio.cl</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horario referencial</h4>
+        <ul>
+          <li>Martes a Domingo: 12:00 - 22:00</li>
+          <li>Lunes: Cerrado</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      © <span id="year"></span> La Escondida. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
