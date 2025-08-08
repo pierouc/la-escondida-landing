@@ -1,22 +1,15 @@
-# Node
+# Node & build
 node_modules/
-npm-debug.log*
-.yarn*
-.pnpm-store/
-
-# Env
-.env
-.env.*.local
-
-# Build/cache
 dist/
 .cache/
-.tmp/
+tmp/
+*.log
 
-# Data local de reservas (persistencia en servidor)
-data/reservations.json
+# Env vars
+.env
+.env.*
 
-# OS / editor
+# OS/editor
 .DS_Store
 Thumbs.db
 .idea/
