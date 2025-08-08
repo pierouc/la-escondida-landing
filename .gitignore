@@ -1,0 +1,23 @@
+# Node
+node_modules/
+npm-debug.log*
+.yarn*
+.pnpm-store/
+
+# Env
+.env
+.env.*.local
+
+# Build/cache
+dist/
+.cache/
+.tmp/
+
+# Data local de reservas (persistencia en servidor)
+data/reservations.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
